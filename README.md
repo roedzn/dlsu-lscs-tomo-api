@@ -1,6 +1,8 @@
 # dlsu-lscs-tomo-api
 
-This repository handles the backend for validating LSCS Members via barcode scanning. Primarily will be used by Tomo Coffee to account for LSCS Members as they are eligible for a discount.
+This repository handles the backend for validating LSCS Members via barcode scanning. 
+
+For Tomo Coffee use: to check if user is a LSCS Members, thus eligible for a discount.
 
 ## Requirements
 1. Requests are assumed as ID numbers (integer).
