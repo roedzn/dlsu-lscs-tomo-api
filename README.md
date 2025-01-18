@@ -1,4 +1,4 @@
-# dlsu-lscs-tomo-api
+# lscs-tomo-api
 
 This repository handles the backend for validating LSCS Members via barcode scanning. 
 
