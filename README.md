@@ -36,7 +36,19 @@ This repository handles the backend for validating LSCS Members via barcode scan
 ### **POST `/validate`**
 * requires `studentId` in req.body
 * request:
-
 ```bash
-curl -X POST 
+curl -X POST (http..)/validate \
+-H "Content-Type: application/json" \
+-d '{"studentId": 12343765}'
+```
+* response:
+```bash
+{
+    "id": "12343765",
+    "email": "rohann_dizon@dlsu.edu.ph",
+    "full_name": "Rohann Gabriel Dizon",
+    "committee_name": "Research and Development",
+    "position_name": "Assistant Vice President",
+    "division_name": "Internals"
+}
 ```
