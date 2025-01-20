@@ -2,7 +2,7 @@
 
 This repository handles the backend for validating LSCS Members via barcode scanning. 
 
-For Tomo Coffee use: to check if user is a LSCS Members, thus eligible for a discount.
+**For Tomo Coffee use**: checks if user is a LSCS Member, thus eligible for a discount within valid time bounds.
 
 ## Requirements
 1. Requests are assumed as ID numbers (integer).
