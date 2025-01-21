@@ -54,14 +54,6 @@ export const getMemberId = async function (req, res) {
                 .send("Error inserting data into DB: ", err.message);
             }
 
-            if (result.affectedRows === 0) {
-              return res
-                .status(400)
-                .send(
-                  "The member has used their discount within the last 6 hours.",
-                );
-            }
-
             // can be removed for privacy
             return res.json({
               id,
