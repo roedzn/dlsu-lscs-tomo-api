@@ -37,7 +37,7 @@ This repository handles the backend for validating LSCS Members via barcode scan
 * requires `studentId` in req.body
 * request:
 ```bash
-curl -X POST (http..)/validate \
+curl -X POST http://tomo-scanner.app.dlsu-lscs.org/validate \
 -H "Content-Type: application/json" \
 -d '{"studentId": 12343765}'
 ```
