@@ -35,14 +35,15 @@ This repository handles the backend for validating LSCS Members via barcode scan
 
 ### **POST `/validate`**
 * requires `studentId` in req.body
-* request:
-```bash
+* `request`:
+```
 curl -X POST http://tomo-scanner.app.dlsu-lscs.org/validate \
 -H "Content-Type: application/json" \
 -d '{"studentId": 12343765}'
 ```
-* response:
-```bash
+* `response`:
+```
+// successful scan
 {
     "id": "12343765",
     "email": "rohann_dizon@dlsu.edu.ph",
@@ -51,4 +52,17 @@ curl -X POST http://tomo-scanner.app.dlsu-lscs.org/validate \
     "position_name": "Assistant Vice President",
     "division_name": "Internals"
 }
+
+// not a member
+{ 
+  "error": "Student ID number is not an LSCS member"
+}
+
+// availing discount within invalid time bound
+// (6 hours from previous scan)
+{
+  "error": "The member has used up their discount within the last 6 hours."
+}
 ```
+
+* 
