@@ -17,20 +17,6 @@ This repository handles the backend for validating LSCS Members via barcode scan
   - Ensures a minimum of 6 hours has elapsed since the last scan for the same ID number.
   - Returns an error/fail response if less than 6 hours have passed.
 
-## TODO
-- [x] **Database Setup**
-  - Create a MySQL database to store:
-    - ID number
-    - Current date
-    - Current time
-- [x] **Validation**
-  - Integrate with the LSCS Central Auth API to check membership validity.
-  - Return appropriate error responses for invalid IDs.
-- [x] **Time Restriction Logic**
-  - Check the timestamp of the last scan for the given ID number.
-  - Ensure at least 6 hours have passed before allowing a new scan.
-  - Return error/fail response if the time condition is not met.
-
 ## Endpoints
 
 ### **POST `/validate`**
