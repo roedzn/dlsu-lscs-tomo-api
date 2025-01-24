@@ -55,9 +55,7 @@ curl -X POST http://tomo-scanner.app.dlsu-lscs.org/validate \
 * requires `studentId` in req.body
 * `request`:
 ```bash
-curl -X GET http://tomo-scanner.app.dlsu-lscs.org/status \
--H "Content-Type: application/json" \
--d '{"studentId": 12343765}'
+curl -X GET http://tomo-scanner.app.dlsu-lscs.org/status?studentId=12343765
 ```
 
 * `response`:
