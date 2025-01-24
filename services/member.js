@@ -2,7 +2,7 @@ import { validateMember } from "./auth.js";
 import pool from "../config/connectdb.js";
 
 export const checkStatus = async function (req, res) {
-  const { studentId } = req.body;
+  const { studentId } = req.query;
 
   try {
     const result = await validateMember(parseInt(studentId));
