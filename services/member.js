@@ -5,7 +5,7 @@ export const checkStatus = async function (req, res) {
   const { studentId } = req.body;
 
   try {
-    const result = await validateMember(studentId);
+    const result = await validateMember(parseInt(studentId));
 
     const {
       id,
@@ -83,7 +83,7 @@ export const getMemberId = async function (req, res) {
   const { studentId } = req.body;
 
   try {
-    const result = await validateMember(studentId);
+    const result = await validateMember(parseInt(studentId));
 
     const {
       id,
